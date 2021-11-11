@@ -5,7 +5,7 @@ import * as dat from 'dat.gui'
 
 const textureLoader = new THREE.TextureLoader();
 
-const normalTexture = textureLoader.load('/normal-map.jpeg');
+const normalTexture = textureLoader.load('https://i.imgur.com/tympSEc.jpeg');
 
 // Debug
 const gui = new dat.GUI()
