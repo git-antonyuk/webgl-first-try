@@ -18,7 +18,7 @@ const scene = new THREE.Scene()
 
 // Objects
 // const geometry = new THREE.TorusGeometry( .7, .2, 16, 100 );
-const geometry = new THREE.SphereGeometry(.9, 80, 80);
+const geometry = new THREE.SphereGeometry(1, 80, 80);
 
 // Materials
 const material = new THREE.MeshStandardMaterial();
@@ -37,13 +37,21 @@ pointLight.intensity = 1;
 scene.add(pointLight)
 
 
-const pointLight2 = new THREE.PointLight(0x0066ff, 0.2)
+const pointLight2 = new THREE.PointLight(0xF78606, 0.2)
 pointLight2.position.set(1,1,1);
 pointLight2.position.x = 2
 pointLight2.position.y = 3
 pointLight2.position.z = 2
 pointLight2.intensity = 1;
 scene.add(pointLight2)
+
+const pointLight3 = new THREE.PointLight(0xF70606, 0.2)
+pointLight3.position.set(1,1,1);
+pointLight3.position.x = -1
+pointLight3.position.y = -1
+pointLight3.position.z = 3
+pointLight3.intensity = 1;
+scene.add(pointLight3)
 
 // gui.add(pointLight2.position, 'x').min(-3).max(3).step(0.01);
 // gui.add(pointLight2.position, 'y').min(-6).max(6).step(0.01);
